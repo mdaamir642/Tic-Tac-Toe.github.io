@@ -1,10 +1,18 @@
-.container{
+.app{
 
-/* border: 1px solid black; */
+
 width: 300px;
 height: 244px;
 display: flex;
 flex-wrap: wrap;
+justify-content: center;
+
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+display: none;
+gap: 50px;
 }
 .box{
 border: 1px solid black;
@@ -16,7 +24,9 @@ align-items: center;
 font-size: 50px;
 
 }
-
+h3{
+    text-align: center;
+}
 #box1 ,#box2 ,#box3 {
 border-top:none ;
 
@@ -30,4 +40,41 @@ border-top:none ;
         #box6 ,#box9 ,#box3 {
             border-right:none ;
             }
-            
+ .container{
+display: flex;
+flex-direction: column;
+justify-content: center;
+height: 800px;
+align-items: center;
+gap: 50px;
+ }     
+.toss-page{
+display: flex;
+flex-direction: column;
+gap: 40px;
+justify-content: center;
+align-items: center;
+}
+.btns{
+display: flex;
+
+justify-content: center;
+align-items: center;
+width: 30%;
+flex-wrap: wrap;
+gap: 20px;
+
+}
+button{
+font-size: 15px;
+border-radius: 10px;
+background:linear-gradient(rgb(224, 255, 171) 0%, rgb(51, 76, 99) 100%) ;
+padding: 5px;
+}
+#startBtn{
+    display: none;
+}
+body{
+    background:linear-gradient(to right, rgb(151, 127, 61) 0%, rgb(129, 63, 104) 100%) ;
+
+}

@@ -9,11 +9,31 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+  <div class="container">
   
-<div class="container" id="container">
+  
+  
+    <div id="tossPage" class="toss-page"> 
+
+<div class="currentPlayer">
+PLAYER 1 : <input type="text" name ="player1" id="player1">
+PLAYER 2 : <input type="text" id="player2">
+</div><div class="btns">
+    <button onclick="toss('head')">head</button>
+    <button onclick="toss('tail')">tail</button>
+    <button id="startBtn" onclick="start()">LETS PLAY</button>
+  </div>
+  <h3 id="tossWin"></h3>
+</div>
 
 
 
+
+
+
+<div id="wrapper" class="wrapper">
+<h3 id="currentPlayer"></h3>
+<div class="app" id="app">
 <div class="box" id="box1" onclick="select(this)"></div>
 <div class="box" id="box2" onclick="select(this)"></div>
 <div class="box" id="box3" onclick="select(this)"></div>
@@ -25,11 +45,8 @@
 <div class="box" id="box9" onclick="select(this)"></div>
 </div>
 
-
-<button onclick="toss(this)">Heads</button>
-<button onclick="toss(this)">Tails</button>
-
-
+</div>
+</div>
 <script src="script.js"></script>
 </body>
 </html>
